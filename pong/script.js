@@ -22,7 +22,8 @@ let isGameRunning = true;
 let score = 0;
 const scoreBoard = document.querySelector("span");
 let gameOver = document.createElement("h1");
-gameOver.innerText = "Game over(To Play again press Y)";
+gameOver.innerText = "Game over (To play again press Y)";
+let divPart = document.querySelector("div")
 
 
 
@@ -42,7 +43,10 @@ const ballWallCollision = () => {
         ballXDirection = -1;
     }
     if(ballY > canvas.height - ballRadius){
-        body = document.querySelector("h1")
+        canvas.style.display = "none"
+        divPart.style.display = "none"
+        
+        body = document.querySelector("body")
         let insertedNode = body.insertBefore(gameOver, null)
         isGameRunning = false;
     }
