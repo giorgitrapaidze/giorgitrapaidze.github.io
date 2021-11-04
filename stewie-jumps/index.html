@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stewie Jumps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- SPLASH SCREEN -->
+    <div id="splash-screen" class="container">
+      <h3>Stewie Jumps</h3>
+      <img src="./img/win.png" width="600" alt="logo">
+      <button id="start-btn">Don't Push This Button!</button>
+    </div>
+    <!-- GAME SCREEN -->
+
+    <h1 id="score">JumpPower:  <span> </span></h1>
+    <canvas id="my-canvas" width="500" height="800"></canvas>
+
+    <!-- GAME OVER SCREEN -->
+    <div id="win-screen" class="container">
+      <h2>You won!</h2>
+      <img src="./img/logo.png" width="600" alt="logo">
+      <button id="restart-btn1">Play Again!</button>
+    </div>
+    
+    <!-- GAME OVER SCREEN -->
+    <div id="gameover-screen" class="container">
+      <h2>Game Over</h2>
+      <img src="./img/game-over.png" width="300" alt="logo">
+      <button id="restart-btn">Play Again!</button>
+    </div>
+
+  </div>
+
+
+  <script src="./main.js"></script>
+  <script src="./game.js"></script>
+  <script src="./character.js"></script>
+  <script src="./platform.js"></script>
+  <script src="./rupert.js"></script>
+  <script src="./peter.js"></script>
+</body>
+</html>
