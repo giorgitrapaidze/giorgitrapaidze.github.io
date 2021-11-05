@@ -43,8 +43,8 @@ const restartGame = () => {
     canvas.style.display = "flex"
     h1Score.style.display = "block"
     // you will need to create a new instance oof the game
-    if(score < 0){
-        score += 4000
+    if(score !== 3500){
+        score = 3500
     }
     
     game = new Game()
