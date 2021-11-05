@@ -10,7 +10,7 @@ const restartBtn1 = document.querySelector("#restart-btn1")
 const splashScreen = document.querySelector("#splash-screen")
 const gameoverSceen = document.querySelector("#gameover-screen")
 const winScreen = document.querySelector("#win-screen")
-let score = 123500
+let score = 3500
 let h1Score = document.querySelector("#score")
 let scoreBoard = document.querySelector("span")
 
