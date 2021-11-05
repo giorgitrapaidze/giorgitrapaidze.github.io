@@ -131,7 +131,7 @@ class Game {
             h1Score.style.display ="none"
         }
 
-        if(this.character.y < this.platformArr[this.platformArr.length - 1].y){
+        if(this.character.y < this.platformArr[this.platformArr.length - 1].y - 300){
             this.isGameOver = true
             clearInterval(this.moveIntervalId)
             clearInterval(this.rupertIntervalId)

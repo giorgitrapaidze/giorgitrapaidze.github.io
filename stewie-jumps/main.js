@@ -10,7 +10,7 @@ const restartBtn1 = document.querySelector("#restart-btn1")
 const splashScreen = document.querySelector("#splash-screen")
 const gameoverSceen = document.querySelector("#gameover-screen")
 const winScreen = document.querySelector("#win-screen")
-let score = 2000
+let score = 123500
 let h1Score = document.querySelector("#score")
 let scoreBoard = document.querySelector("span")
 
@@ -43,6 +43,10 @@ const restartGame = () => {
     canvas.style.display = "flex"
     h1Score.style.display = "block"
     // you will need to create a new instance oof the game
+    if(score < 0){
+        score += 4000
+    }
+    
     game = new Game()
     game.addPlatforms()
     game.addRuperts()
